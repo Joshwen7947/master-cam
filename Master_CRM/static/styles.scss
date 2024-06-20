@@ -1,0 +1,197 @@
+// Variables
+$primary-color: #007bff;
+$primary-hover-color: #0056b3;
+$secondary-color: #28a745;
+$secondary-hover-color: #218838;
+$background-color: #f0f8ff;
+$container-bg-color: #ffffff;
+$text-color: #333;
+$subtext-color: #666;
+$title-color: #333;
+$success-color: #28a745;
+$success-hover-color: #218838;
+
+// General Styles
+body {
+	background-color: $background-color;
+	font-family: Arial, sans-serif;
+	color: $text-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	text-align: center;
+}
+
+header {
+	width: 100%;
+	background-color: $container-bg-color;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px 0;
+
+	h1 {
+		margin: 0;
+		font-size: 2.5rem;
+		color: $text-color;
+	}
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	width: 100%;
+}
+
+.container {
+	background-color: $container-bg-color;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	max-width: 400px;
+	width: 100%;
+	margin: 50px auto;
+
+	h1 {
+		font-size: 2.5rem;
+		color: $text-color;
+		margin-bottom: 1.5rem;
+	}
+
+	p {
+		font-size: 18px;
+		color: $subtext-color;
+		margin-bottom: 20px;
+	}
+
+	.input-field {
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		font-size: 1rem;
+		box-sizing: border-box;
+
+		&:focus {
+			border-color: $primary-color;
+			outline: none;
+		}
+	}
+
+	.btn {
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+		border: none;
+		border-radius: 4px;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&.login-btn {
+			background-color: $primary-color;
+			color: #fff;
+
+			&:hover {
+				background-color: $primary-hover-color;
+			}
+		}
+
+		&.register-btn {
+			background-color: $secondary-color;
+			color: #fff;
+
+			&:hover {
+				background-color: $secondary-hover-color;
+			}
+		}
+
+		&.logout-btn {
+			background-color: $primary-color;
+			color: #fff;
+
+			&:hover {
+				background-color: $primary-hover-color;
+			}
+		}
+		&.google-btn {
+			background-color: coral;
+			color: #fff;
+
+			&:hover {
+				background-color: rgb(222, 107, 65);
+			}
+		}
+	}
+}
+
+// Additional styles for dashboard.html
+.content {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+
+	h1 {
+		color: $title-color;
+	}
+
+	h4 {
+		color: $subtext-color;
+	}
+
+	table {
+		width: 100%;
+		margin-top: 20px;
+		border-collapse: collapse;
+
+		th,
+		td {
+			padding: 10px;
+			border: 1px solid #ccc;
+
+			th {
+				background-color: #f0f0f0;
+				color: $text-color;
+			}
+		}
+	}
+
+	a {
+		display: inline-block;
+		padding: 8px 16px;
+		margin: 5px;
+		border-radius: 20px;
+		background-color: $primary-color;
+		color: #fff;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: $primary-hover-color;
+		}
+	}
+
+	input {
+		padding: 10px;
+		margin: 5px;
+		border: solid 1px;
+		border-radius: 5px;
+	}
+
+	#add_btn {
+		background-color: $success-color;
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $success-hover-color;
+		}
+	}
+}
